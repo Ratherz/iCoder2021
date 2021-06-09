@@ -19,15 +19,21 @@
 <p-button label="Submit" [disabled]="true"></p-button>
 <button pButton pRipple type="button" label="Primary" class="p-button-rounded"></button>
 <button pButton pRipple type="button" icon="pi pi-check" class="p-button-rounded"></button> -->
-
+<p-toast></p-toast>
 <div class="container">
   <header class="container_header">
     <span [routerLink]="['home']">Home</span>
     <span [routerLink]="['student']">Student</span>
     <span [routerLink]="['add']">Add Student</span>
+    <span [routerLink]="['pokemon']">Pokemon</span>
+    <span [routerLink]="['pokemonGo']">PokemonGo</span>
   </header>
   <main class="container_main">
-    Hello Git
+    <!-- <p-button label="Calculate" (onClick)="transform5BathToBath()"></p-button>
+    <p-button label="Sum" (onClick)="sum()"></p-button>
+    เหรียญห้าบาท {{fiveBathlist | json}}
+    เหรียญหนึ่งบาท {{oneBathlist | json}}
+    ผลรวม {{summary}} -->
     <router-outlet></router-outlet>
   </main>
 </div>

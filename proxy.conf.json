@@ -1,0 +1,12 @@
+{
+  "/training-demo/student/*": {
+    "target": "https://showcase.cdgs.co.th",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/training-demo/pokemon/*": {
+    "target": "http://localhost:3000",
+    "secure": false,
+    "changeOrigin": true
+  }
+}

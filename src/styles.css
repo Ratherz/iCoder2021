@@ -12,3 +12,39 @@ header.container_header {
   align-items: center;
   column-gap: 0.5em;
 }
+
+.query-container {
+  display: flex;
+  place-content: center;
+  grid-column-gap: 0.5em;
+  column-gap: 0.5em;
+  padding: 0.5em;
+}
+
+.table-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5em;
+}
+
+td.control-button-table {
+  display: flex;
+  justify-content: flex-end;
+}
+
+img.clickable-img {
+  cursor: pointer;
+}
+
+.student-form {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  row-gap: 0.5em;
+}
+
+th.p-table-button {
+  width: 10%;
+  row-gap: 0.5em;
+}

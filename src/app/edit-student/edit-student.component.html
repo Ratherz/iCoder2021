@@ -1,4 +1,4 @@
-<div class="student-form" [formGroup]="addStudentFormGroup">
+<div class="student-form" [formGroup]="editStudentFormGroup">
   <div>
     <span> ชื่อ : </span>
     <input type="text" pInputText name="" id=""  formControlName="name"/>
@@ -16,9 +16,13 @@
     <input type="text" pInputText name="" id=""  formControlName="tel"/>
     <p-message *ngIf="telFormControl.dirty && telFormControl.invalid " severity="error" text="Field is required"></p-message>
   </div>
+  <div>
+    <span>CreateDate</span>
+    <p-calendar [showIcon]="true" inputId="icon"></p-calendar>
+  </div>
 
   <div class="query-container">
-    <p-button [disabled]="addStudentFormGroup.invalid" label="บันทึก" (onClick)="saveStudent()"> </p-button>
+    <p-button [disabled]="editStudentFormGroup.invalid" label="บันทึก" (onClick)="saveStudent()"> </p-button>
     <p-button label="ล้างค่า" (onClick)="resetStudent()"> </p-button>
     <p-button label="ย้อนกลับ" (onClick)="backClicked()" > </p-button>
   </div>

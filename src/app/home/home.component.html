@@ -4,3 +4,24 @@
 <div>
   ผลรวม {{result}}
 </div>
+
+
+{{status | status}}
+
+<div *ngFor="let student of students">
+  <span style="padding-right:0.5em">{{student.name}}</span>
+  <span>{{student.status | status}}</span>
+</div>
+
+{{date | date:'short'}}
+<br/>
+{{ bath | currency}}
+<br>
+{{power | number:'1.2'}}
+
+
+<input [formControl]="pokemonNameFormControl"
+ type="text" name="" pInputText id="">
+
+
+{{pokemon$ | async | json}}
